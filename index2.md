@@ -8,4 +8,4 @@
 
 ### Link below:
 
-[Model] (https://github.com/ethan20201996/ethan20201996.github.io/model.py)
+[Model] (https://github.com/ethan20201996/ethan20201996.github.io/blob/main/model.py)
