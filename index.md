@@ -23,7 +23,11 @@ self.store = self.store + 10 + self.speed<br/>
 if self.store > 4000:<br/>
 self.speed += 100<br/>
 
-### Link below:
+## Link below:
 
 <a href="https://raw.githubusercontent.com/ethan20201996/ethan20201996.github.io/main/model.py">Model<a>
 <a href="https://raw.githubusercontent.com/ethan20201996/ethan20201996.github.io/main/agentframework.py">Framework<a>
+
+## Resume
+
+<a href="https://raw.githubusercontent.com/ethan20201996/ethan20201996.github.io/main/testpage.html">On the way......<a>
