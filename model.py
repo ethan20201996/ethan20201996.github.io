@@ -16,8 +16,17 @@ import tkinter
 
 matplotlib.use('TkAgg') 
 
-#seed = 1 
-#random.seed(seed)
+window = tkinter.Tk()
+window.wm_title("Model")
+
+def close_window(): 
+    window.destroy()
+
+# lbl_iterations = tkinter.Label(window, text="iterations:").grid(column=0, row=0)
+# num_iterations = tkinter.Entry(window, width=10).grid(column=1, row=0)
+# lbl_agents = tkinter.Label(window, text="agents:").grid(column=0, row=1)
+# num_agents = tkinter.Entry(window, width=10).grid(column=1, row=1)
+# button = tkinter.Button(window,text = "Close", command =close_window).grid(column=3, row=0, sticky="E")
 
 environment = []
 f = open ("in.txt", newline="")
@@ -39,15 +48,14 @@ num_of_agents = 10
 num_of_iterations = 100
 neighbourhood = 20
 agents = []
-
 fig = matplotlib.pyplot.figure(figsize=(7, 7))
 ax = fig.add_axes([0, 0, 1, 1])
 
 carry_on = True	
 	
 def update(frame_number):
-    
-    fig.clear()  
+    if fig:
+        fig.clear()  
     ax = fig.add_axes([0, 0, 1, 1])
     global carry_on
 
@@ -60,10 +68,11 @@ def update(frame_number):
     matplotlib.pyplot.xlim(0, 99)
     matplotlib.pyplot.ylim(0, 99)
     matplotlib.pyplot.imshow(environment)
+    
     for i in range(num_of_agents):
-       matplotlib.pyplot.scatter(agents[i].x,agents[i].y)
-		
+       matplotlib.pyplot.scatter(agents[i].x,agents[i].y)	
     print("after eating:")
+    
     for i in range(num_of_agents):
        print(agents[i])
        
@@ -75,19 +84,26 @@ def gen_function(b = [0]):
         a = a + 1
 
 def run():
+    def inputs():
+        if num_of_agents == None:     
+            num_of_agents = str(num_agents.get())
+        return num_of_agents
+        if num_of_iterations == None:
+             num_of_iterations = str(num_iterations.get())
+        return num_of_iterations
     animation = matplotlib.animation.FuncAnimation(fig, update, frames=gen_function, repeat=False)
     canvas.draw()
-
     
-root = tkinter.Tk()
-root.wm_title("Model")
-menu_bar = tkinter.Menu(root)
-root.config(menu=menu_bar)
+
+
+menu_bar = tkinter.Menu(window)
+window.config(menu=menu_bar)
 model_menu = tkinter.Menu(menu_bar)
 menu_bar.add_cascade(label="Model", menu=model_menu)
 model_menu.add_command(label="Run model", command=run) 
-canvas = matplotlib.backends.backend_tkagg.FigureCanvasTkAgg(fig, master=root)
-canvas._tkcanvas.pack(side=tkinter.TOP, fill=tkinter.BOTH, expand=1)
+
+canvas = matplotlib.backends.backend_tkagg.FigureCanvasTkAgg(fig, master=window)
+canvas._tkcanvas.grid(column=3, row=2)
 
 
 # Make the agents.
