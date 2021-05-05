@@ -6,14 +6,21 @@ Created on Tue Mar  9 14:46:19 2021
 """
 
 import random
-import matplotlib as mb
-import tkinter as tk
+
 
 class Agent():
    
     def __init__(self, environment, agents, y, x):
-        self.y = y
-        self.x = x
+        if (y == None):
+            self.y = random.randint(0,100)
+        else:
+            self.y = y
+       
+        if (x == None):
+            self.x = random.randint(0,100)
+        else:
+            self.x = x 
+            
         self.environment = environment
         self.agents = agents
         self.store = 0
