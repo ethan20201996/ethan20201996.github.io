@@ -23,7 +23,9 @@ self.store = self.store + 10 + self.speed<br/>
 if self.store > 4000:<br/>
 self.speed += 100<br/>
 
-<img src="./temp.png"></img>
+### Final result:
+
+<img src="./temp.png">
 
 ## Link below:
 
