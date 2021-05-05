@@ -22,6 +22,7 @@ self.environment[self.y][self.x] -= 10<br/>
 self.store = self.store + 10 + self.speed<br/>
 if self.store > 4000:<br/>
 self.speed += 100<br/>
+The final canvas will output as a png file <br/>
 
 ### Final result:
 
