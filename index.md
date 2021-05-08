@@ -1,3 +1,12 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-01-26 14:49:25
+ * @LastEditTime: 2021-05-08 16:46:42
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \ethan20201996.github.io\index.md
+-->
+
 # GEOG 5990
 
 ---
@@ -35,4 +44,4 @@ The final canvas will output as a png file <br/>
 
 ## Resume
 
-<a href="https://raw.githubusercontent.com/ethan20201996/ethan20201996.github.io/main/testpage.html">On the way......<a>
+<a href="https://raw.githubusercontent.com/ethan20201996/ethan20201996.github.io/main/homepage.html">On the way......<a>
