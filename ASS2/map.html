@@ -36,40 +36,78 @@
           action="setData.php"
           enctype="multipart/form-data"
         >
-          <p>Add marker:(not complete yet)</p>
-
+          <p>Add places:</p>
           <p>
-            Latitude (e.g. 53.79161) :
-            <input type="text" class="boxes" id="lat" name="lat" />
+            Latitude :
+            <input
+              type="text"
+              class="boxes"
+              id="lat"
+              name="lat"
+              placeholder="53.96172"
+            />
           </p>
           <p>
-            Longitude (e.g. -1.531) :
-            <input type="text" class="boxes" id="lon" name="lon" />
+            Longitude :
+            <input
+              type="text"
+              class="boxes"
+              id="lon"
+              name="lon"
+              placeholder="-1.08766"
+            />
           </p>
           <p>
-            Place : (e.g. Royal Armouries Museum)
-            <input type="text" class="boxes" id="place" name="place" />
+            Place :
+            <input
+              type="text"
+              class="boxes"
+              id="place"
+              name="place"
+              placeholder="Yorkshire Museum"
+            />
           </p>
           <p>
-            Website (1-31) : (e.g. royalarmouries.org)
-            <input type="text" class="boxes" id="website" name="website" />
+            Website :
+            <input
+              type="text"
+              class="boxes"
+              id="website"
+              name="website"
+              placeholder="www.yorkshiremuseum.org.uk"
+            />
           </p>
           <p>
-            Details (1-23) : (e.g. Armouries Dr, Leeds LS10 1LT)
-            <input type="text" class="boxes" id="details" name="details" />
+            Details :
+            <textarea
+              type="text"
+              class="boxes"
+              id="details"
+              name="details"
+              placeholder="Museum Gardens, Museum Street, York YO1 7FR"
+              rows="4"
+              cols="18"
+            ></textarea>
           </p>
           <p>
-            Reopening time (1-59) : (e.g. 2021.5.19)
+            Reopening time :
             <input
               type="text"
               class="boxes"
               id="reopeningtime"
               name="reopeningtime"
+              placeholder="2021.7.9"
             />
           </p>
           <p>
-            Type (1-23) : (e.g. museum)
-            <input type="text" class="boxes" id="type" name="type" />
+            Type :
+            <input
+              type="text"
+              class="boxes"
+              id="type"
+              name="type"
+              placeholder="museum"
+            />
           </p>
 
           <input type="submit" id="submit" name="Submit" value="Submit Form" />
