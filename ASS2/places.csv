@@ -1,0 +1,27 @@
+id,latitude,longitude,place,website,details,reopeningtime,type
+1,53.80165,-1.54711,Leeds City Museum                                 ,https://citymuseum.leeds.gov.uk/,"Millennium Square, Leeds LS2 8BH                                                                    ",Undeclared/Closed,museum
+2,53.79161,-1.531,Royal Armouries Museum                            ,royalarmouries.org,"Armouries Dr, Leeds LS10 1LT                                                                        ",2021.5.19,museum
+3,53.7887,-1.5312,Leeds Museums and Galleries                       ,museumsandgalleries.leeds.gov.uk,"Discovery Centre, Carlisle Rd, Leeds LS10 1LB                                                       ",Undeclared/Closed,museum
+4,53.80257,-1.58271,Leeds Industrial Museum at Armley Mills           ,museumsandgalleries.leeds.gov.uk,"Canal Rd, Armley, Leeds LS12 2QF                                                                    ",Undeclared/Closed,museum
+5,53.82223,-1.60718,Abbey House Museum                                ,abbeyhousemuseum.leeds.gov.uk,"Abbey Walk, Abbey Rd, Kirkstall, Leeds LS5 3EH                                                      ",Undeclared/Closed,museum
+6,53.79109,-1.75604,National Science and Media Museum                 ,www.scienceandmediamuseum.org.uk,"Pictureville, Bradford BD1 1NQ                                                                      ",2021.5.19,museum
+7,53.80821,-1.51857,Thackray Museum of Medicine                       ,www.thackraymuseum.co.uk,"141 Beckett St, Harehills, Leeds LS9 7LN                                                            ",2021.5.17,museum
+8,53.96172,-1.08766,Yorkshire Museum                                  ,www.yorkshiremuseum.org.uk,"Museum Gardens, Museum Street, York YO1 7FR                                                         ",2021.7.9,museum
+9,53.96054,-1.09636,National Railway Museum York                      ,www.railwaymuseum.org.uk,"Leeman Rd, York YO26 4XJ                                                                            ",2021.5.19,museum
+10,53.95563,-1.07836,York Castle Museum                                ,www.yorkcastlemuseum.org.uk,"Tower St, York YO1 9RY                                                                              ",2021.5.19,museum
+11,53.79994,-1.54826,Leeds Art Gallery                                 ,museumsandgalleries.leeds.gov.uk,"The Headrow, Leeds LS1 3AA                                                                          ",Undeclared/Closed,gallery
+12,53.79786,-1.5386,Cole's Gallery                                    ,www.colesgallery.co.uk,"Unit 16 1904 Hall, Leeds Kirkgate Market, Leeds LS2 7HY                                             ",Undeclared/Closed,gallery
+13,53.79843,-1.54126,Castle Fine Art                                   ,www.castlefineart.com,"County Arcade, 12/14 Victoria Quarter, Leeds LS1 6ER                                                ",Opening,gallery
+14,53.79665,-1.53387,The Gallery at 164                                ,leedsgallery.com,"Munro House, Duke St, Leeds LS9 8AG                                                                 ",Undeclared/Closed,gallery
+15,53.79995,-1.54839,Craft Centre and Design Gallery                   ,www.craftcentreleeds.co.uk,"City Art Gallery, The Headrow, Leeds LS1 3AB                                                        ",Opening now,gallery
+16,53.96289,-1.08602,York Art Gallery                                  ,www.yorkartgallery.org.uk,"Exhibition Square, Exhibition Square, York YO1 7EW                                                  ",2021.5.28,gallery
+17,53.95995,-1.08333,Whitewall Galleries York                          ,www.whitewallgalleries.com,"9 Davygate, York YO1 8QR                                                                            ",Opening,gallery
+18,53.96329,-1.08574,blue tree gallery                                 ,www.bluetreegallery.co.uk,"23 Bootham, York YO30 7BW                                                                           ",Opening,gallery
+19,53.95727,-1.07755,Art of Protest Gallery (York)                     ,www.artofprotestgallery.com,"11 Walmgate, York YO1 9TX                                                                           ",Undeclared/Closed,gallery
+20,53.95587,-1.09108,Blossom Street Gallery                            ,www.blossomstreet.co.uk,"2 Blossom St, York YO24 1AE                                                                         ",Opening,gallery
+21,53.79983,-1.54578,Junkyard Golf Club,www.junkyardgolfclub.co.uk,"The Light the Headrow, The Headrow, Leeds LS1 8TL",2021.5.17,club
+22,53.79611,-1.54111,The HiFi Club,www.thehificlub.co.uk,"2 Central Rd, Leeds LS1 6DE",2021.5.21,club
+23,53.80017,-1.54027,The Domino,www.thedomino.co.uk,"7 Grand Arcade, Leeds LS1 6PG",2021.5.21,club
+24,53.95844,-1.0785,Cosy Club,cosyclub.co.uk,"19-22 Fossgate, York YO1 9TA",2021.5.17,club
+25,53.95747,-1.08685,Popworld York,www.popworldparty.co.uk,"George Hudson St, York YO1 6JL",Undeclared/Closed,club
+26,53.96878,-1.0879,York City Football Club,www.yorkcityfootballclub.co.uk,"Bootham Cres, Clifton, York YO30 7AQ",Undeclared/Closed,club

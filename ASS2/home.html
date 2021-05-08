@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script language="JavaScript" type="text/JavaScript" src="./home.js"></script>
+    <link type="text/css" rel="Stylesheet" href="home.css" />
+    <title>Document</title>
+  </head>
+  <body>
+     <div id="navbar">
+      <a class="active" href="./home.html">Home</a>
+      <a href="./map.html">Maps</a>
+      <!-- <a href="javascript:void(0)">Contact</a> -->
+    </div>
+    <div class="header">
+      <img class="header_img" src="outside.jpg" >
+      <div class="center_text">
+        <h2>Find your joys!</h2>
+        <a href="./map.html">Explore outside...</a>
+      </div>  
+    </div>
+    <div class="para">
+      <h2>To find exactly reopening time</h2>
+      <p>Although government has annouced the date of lifting lockdown, the specific date for each place is different. If you want to explore sites around Leeds and York, this page can help you.</p>
+      <p></p>
+    </div>
+    <div>
+      <div class="image-container">
+        <a href="https://www.gov.uk/government/news/prime-minister-sets-out-roadmap-to-cautiously-ease-lockdown-restrictions">
+          <div class="text">Roadmap to cautiously ease lockdown restrictions</div>
+        </a>
+      </div>
+        <div class="timeline">
+          <div class="container left">
+            <div class="content">
+              <h2>Step 2: after 12 April</h2>
+              <li>Most outdoor attractions and settings will reopen</li>
+              <li>Hospitality venues can serve people outdoors only</li>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h2>Step 3: after 17 May</h2>
+              <li>Outdoor performances will reopen</li>
+              <li>Indoor hospitality, entertainment venues will reopen</li>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <h2>Step 4: after 21 June</h2>
+              <li>reopen nightclubs...</li>
+              <li>all limits can be removed</li>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h2>...ENJOY SUMMER!</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script>
+    // function to make manu bar sticky top side, it seems need to define new function if want to access external css in external js file
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+  </body>
+</html>
