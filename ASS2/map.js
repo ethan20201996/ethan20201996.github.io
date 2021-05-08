@@ -15,42 +15,25 @@ function infoCallback(infowindow, marker) {
   };
 }
 
-function fetchData() {
-  placeData = new Array();
-  // init map
+function initialize() {
   map = new google.maps.Map(document.getElementById("map_canvas"), {
     center: { lat: 53.8, lng: -1.4 },
     zoom: 10,
-  });
-  //fetch date and split it
-  $.getJSON("fetchData.php", function (results) {
-    for (var i = 0; i < results.length; i++) {
-      placeData.push({
-        id: results[i].id,
-        lat: results[i].lat,
-        lng: results[i].lng,
-        place: results[i].place,
-        website: results[i].website,
-        details: results[i].details,
-        reopeningtime: results[i].reopeningtime,
-        type: results[i].type,
-      });
-    }
-    return placeData;
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
   });
 }
 
 function showMarker() {
-  for (var i = 0; i < placeData.length; i++) {
+  for (id in testData) {
     var mycolor = "";
     var icontype = "";
     var starcolor = "";
     var markerLocation = new google.maps.LatLng(
-      placeData[i].lat,
-      placeData[i].lng
+      testData[id].lat,
+      testData[id].lng
     );
-    var myletter = placeData[i].type.substring(0, 1).toUpperCase();
-    var opentime = placeData[i].reopeningtime;
+    var myletter = testData[id].type.substring(0, 1).toUpperCase();
+    var opentime = testData[id].reopeningtime;
     // get and split to string of reopen date, then transfer to numbers
     var openmouth = opentime.replace(/[^0-9]/gi, "").substring(4, 5);
     var openday = opentime.replace(/[^0-9]/gi, "").substring(5);
@@ -80,15 +63,15 @@ function showMarker() {
     // final info window content
     var info =
       "<div class=infowindow><h1>" +
-      placeData[i].place +
+      testData[id].place +
       "</h1><p>Address: " +
-      placeData[i].details +
+      testData[id].details +
       "</p><p>Link: <a href='http://" +
-      placeData[i].website +
+      testData[id].website +
       "'>" +
-      placeData[i].website +
+      testData[id].website +
       "</a></p><p>Reopening time: " +
-      placeData[i].reopeningtime +
+      testData[id].reopeningtime +
       "</p></div>";
 
     //add marker, set properties
@@ -151,19 +134,19 @@ var valid = function (x) {
   x.style.backgroundColor = "White";
 };
 
+let newarrey = [];
+
 function validate() {
   error = false;
   var allboxes = document.getElementsByClassName("boxes");
-  // var username = document.getElementById("user");
-  // var password = document.getElementById("password");
-
   var lat = document.getElementById("lat");
   var lon = document.getElementById("lon");
-  // var place = document.getElementById("place");
+  var place = document.getElementById("place");
   var website = "http://" + document.getElementById("website");
-  // var details = document.getElementById("details");
-  // var reopeningtime = document.getElementById("reopeningtime");
-  // var type = document.getElementById("type");
+  var details = document.getElementById("details");
+  var reopeningtime = document.getElementById("reopeningtime");
+  var type = document.getElementById("type");
+  newarrey.push(lat, lon, place, website, details, reopeningtime, type);
 
   for (var i = 0; i < allboxes.length; i++) {
     valid(allboxes[i]);
@@ -193,4 +176,8 @@ function validate() {
   } else {
     return true;
   }
+}
+
+function pushData() {
+  testData.push(newarrey);
 }

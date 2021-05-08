@@ -1,4 +1,4 @@
-var markerData = [
+var testData = [
   {
     id: 1,
     lat: 53.80165,

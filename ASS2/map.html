@@ -13,9 +13,10 @@
     type="text/javascript"
     src="https://maps.google.com/maps/api/js?sensor=false"
   ></script>
+  <script type="text/javascript" src="./testData.js"></script>
 </head>
 
-<body onload="fetchData()">
+<body onload="initialize()">
   <div class="top-panel">
     <h1>GEOG5870 Assignment</h1>
     <p><a class="home" href="home.html">Homepage</a></p>
@@ -35,17 +36,7 @@
           action="setData.php"
           enctype="multipart/form-data"
         >
-          <p>
-            Please use your database log-in credentials to use this function:
-          </p>
-          <p>
-            Username : <input type="text" class="boxes" id="user" name="user" />
-          </p>
-          <p>
-            Password :
-            <input type="text" class="boxes" id="password" name="password" />
-          </p>
-          <br />
+          <p>Add marker:</p>
 
           <p>
             Latitude (e.g. 10.0) :
