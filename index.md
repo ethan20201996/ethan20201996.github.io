@@ -1,8 +1,8 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-26 14:49:25
- * @LastEditTime: 2021-05-08 16:46:42
- * @LastEditors: your name
+ * @LastEditTime: 2021-05-08 16:52:55
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \ethan20201996.github.io\index.md
 -->
@@ -44,4 +44,4 @@ The final canvas will output as a png file <br/>
 
 ## Resume
 
-<a href="https://raw.githubusercontent.com/ethan20201996/ethan20201996.github.io/main/homepage.html">On the way......<a>
+<a href="https://ethan20201996.github.io/homepage.html">On the way......<a>
