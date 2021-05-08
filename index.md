@@ -1,12 +1,3 @@
-<!--
- * @Author: your name
- * @Date: 2021-01-26 14:49:25
- * @LastEditTime: 2021-05-08 16:52:55
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \ethan20201996.github.io\index.md
--->
-
 # GEOG 5990
 
 ---
